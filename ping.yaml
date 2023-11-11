@@ -1,3 +1,6 @@
 ---
 - name: Ping Test
-  ansible.builtin.ping:
+  hosts: all
+  tasks:
+    - name: Ping test for a host
+      ping:
